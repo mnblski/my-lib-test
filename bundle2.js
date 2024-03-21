@@ -250,7 +250,7 @@ const { is: ue, defineProperty: ge, getOwnPropertyDescriptor: ve, getOwnProperty
   return e;
 } }, wt = (s, t) => !ue(s, t), Dt = { attribute: !0, type: String, converter: ot, reflect: !1, hasChanged: wt };
 Symbol.metadata ?? (Symbol.metadata = Symbol("metadata")), T.litPropertyMetadata ?? (T.litPropertyMetadata = /* @__PURE__ */ new WeakMap());
-class V extends HTMLElement {
+class j extends HTMLElement {
   static addInitializer(t) {
     this._$Ei(), (this.l ?? (this.l = [])).push(t);
   }
@@ -461,14 +461,14 @@ class V extends HTMLElement {
   firstUpdated(t) {
   }
 }
-V.elementStyles = [], V.shadowRootOptions = { mode: "open" }, V[Z("elementProperties")] = /* @__PURE__ */ new Map(), V[Z("finalized")] = /* @__PURE__ */ new Map(), ut == null || ut({ ReactiveElement: V }), (T.reactiveElementVersions ?? (T.reactiveElementVersions = [])).push("2.0.4");
+j.elementStyles = [], j.shadowRootOptions = { mode: "open" }, j[Z("elementProperties")] = /* @__PURE__ */ new Map(), j[Z("finalized")] = /* @__PURE__ */ new Map(), ut == null || ut({ ReactiveElement: j }), (T.reactiveElementVersions ?? (T.reactiveElementVersions = [])).push("2.0.4");
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
 const F = globalThis, nt = F.trustedTypes, Nt = nt ? nt.createPolicy("lit-html", { createHTML: (s) => s }) : void 0, Xt = "$lit$", R = `lit$${(Math.random() + "").slice(9)}$`, Kt = "?" + R, _e = `<${Kt}>`, k = document, K = () => k.createComment(""), J = (s) => s === null || typeof s != "object" && typeof s != "function", Jt = Array.isArray, $e = (s) => Jt(s) || typeof (s == null ? void 0 : s[Symbol.iterator]) == "function", gt = `[ 	
-\f\r]`, q = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, Vt = /-->/g, jt = />/g, L = RegExp(`>|${gt}(?:([^\\s"'>=/]+)(${gt}*=${gt}*(?:[^ 	
+\f\r]`, q = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, jt = /-->/g, Vt = />/g, L = RegExp(`>|${gt}(?:([^\\s"'>=/]+)(${gt}*=${gt}*(?:[^ 	
 \f\r"'\`<>=]|("|')|))|$)`, "g"), It = /'/g, Bt = /"/g, Gt = /^(?:script|style|textarea|title)$/i, we = (s) => (t, ...e) => ({ _$litType$: s, strings: t, values: e }), A = we(1), U = Symbol.for("lit-noChange"), _ = Symbol.for("lit-nothing"), Wt = /* @__PURE__ */ new WeakMap(), H = k.createTreeWalker(k, 129);
 function Qt(s, t) {
   if (!Array.isArray(s) || !s.hasOwnProperty("raw"))
@@ -482,7 +482,7 @@ const xe = (s, t) => {
     const u = s[g];
     let v, m, f = -1, x = 0;
     for (; x < u.length && (r.lastIndex = x, m = r.exec(u), m !== null); )
-      x = r.lastIndex, r === q ? m[1] === "!--" ? r = Vt : m[1] !== void 0 ? r = jt : m[2] !== void 0 ? (Gt.test(m[2]) && (o = RegExp("</" + m[2], "g")), r = L) : m[3] !== void 0 && (r = L) : r === L ? m[0] === ">" ? (r = o ?? q, f = -1) : m[1] === void 0 ? f = -2 : (f = r.lastIndex - m[2].length, v = m[1], r = m[3] === void 0 ? L : m[3] === '"' ? Bt : It) : r === Bt || r === It ? r = L : r === Vt || r === jt ? r = q : (r = L, o = void 0);
+      x = r.lastIndex, r === q ? m[1] === "!--" ? r = jt : m[1] !== void 0 ? r = Vt : m[2] !== void 0 ? (Gt.test(m[2]) && (o = RegExp("</" + m[2], "g")), r = L) : m[3] !== void 0 && (r = L) : r === L ? m[0] === ">" ? (r = o ?? q, f = -1) : m[1] === void 0 ? f = -2 : (f = r.lastIndex - m[2].length, v = m[1], r = m[3] === void 0 ? L : m[3] === '"' ? Bt : It) : r === Bt || r === It ? r = L : r === jt || r === Vt ? r = q : (r = L, o = void 0);
     const d = r === L && s[g + 1].startsWith("/>") ? " " : "";
     n += r === q ? u + _e : f >= 0 ? (i.push(v), u.slice(0, f) + Xt + u.slice(f) + R + d) : u + R + (f === -2 ? g : d);
   }
@@ -719,7 +719,7 @@ const Re = (s, t, e) => {
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-let E = class extends V {
+let E = class extends j {
   constructor() {
     super(...arguments), this.renderOptions = { host: this }, this._$Do = void 0;
   }
@@ -908,7 +908,7 @@ class Ue extends se {
 const M = () => new ze();
 class ze {
 }
-const mt = /* @__PURE__ */ new WeakMap(), j = ee(class extends Ue {
+const mt = /* @__PURE__ */ new WeakMap(), V = ee(class extends Ue {
   render(s) {
     return _;
   }
@@ -1022,10 +1022,10 @@ ht([
 W = ht([
   N("control-button")
 ], W);
-var Ve = Object.defineProperty, je = Object.getOwnPropertyDescriptor, Ie = (s, t, e, i) => {
-  for (var o = i > 1 ? void 0 : i ? je(t, e) : t, n = s.length - 1, r; n >= 0; n--)
+var je = Object.defineProperty, Ve = Object.getOwnPropertyDescriptor, Ie = (s, t, e, i) => {
+  for (var o = i > 1 ? void 0 : i ? Ve(t, e) : t, n = s.length - 1, r; n >= 0; n--)
     (r = s[n]) && (o = (i ? r(t, e, o) : r(o)) || o);
-  return i && o && Ve(t, e, o), o;
+  return i && o && je(t, e, o), o;
 };
 let bt = class extends E {
   // scale up the plugin
@@ -1325,7 +1325,7 @@ let Q = class extends E {
         </div>
         <div class="video-container">
           <video
-            ${j(this.videoElementRef)}
+            ${V(this.videoElementRef)}
             playsinline=""
             muted
             width="100%"
@@ -1486,7 +1486,7 @@ let tt = class extends E {
     return A`
       <div
         class="signapse-player-active-root ${oe(s)}"
-        ${j(this.playerRootRef)}
+        ${V(this.playerRootRef)}
       >
         ${Be()}
         <video-container></video-container>
@@ -1757,7 +1757,7 @@ let Y = class extends E {
     `;
     return A`
       ${s}
-      <div id="signapse_player_root" ${j(this.playerRootRef)}>
+      <div id="signapse_player_root" ${V(this.playerRootRef)}>
         <signapse-player-active
           ?hidden=${!this.value.active}
         ></signapse-player-active>
@@ -1932,9 +1932,9 @@ let z = class extends E {
       ${s}
       <div
         class="signapse-player-trigger-root"
-        ${j(this.playerTriggerRootRef)}
+        ${V(this.playerTriggerRootRef)}
       >
-        <div class="content-active" ${j(this.contentActiveOverlayRef)}>
+        <div class="content-active" ${V(this.contentActiveOverlayRef)}>
           <div class="highlight-overlay"></div>
           <div
             tabindex="0"
@@ -1963,7 +1963,7 @@ let z = class extends E {
             </svg>
           </div>
         </div>
-        <div class="content-playing" ${j(this.contentPlayingOverlayRef)}>
+        <div class="content-playing" ${V(this.contentPlayingOverlayRef)}>
           <div class="highlight-overlay"></div>
         </div>
       </div>
@@ -2100,11 +2100,7 @@ function ds() {
   window.signapseLoadPlugin || (window.signapseLoadPlugin = hs), window.signapseInvalidatePlugin || (window.signapseInvalidatePlugin = ae);
 }
 function St(s) {
-  const t = window.location.href, e = window.location.host;
-  return new Promise((i, o) => {
-    var n;
-    return s.domain !== e ? o(new Error("Domain not allowed for plugin")) : (n = s.allowed_urls) != null && n.find((r) => r.url === t) ? i(!0) : o(new Error("Page not allowed for plugin"));
-  });
+  return console.log("shouldLoadPlugin", s), new Promise((t) => t(!0));
 }
 function ae() {
   var s, t, e, i;
