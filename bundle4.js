@@ -2116,10 +2116,11 @@ function ps() {
 }
 window.addEventListener("popstate", ps);
 function us() {
+  console.log("DOMContentLoaded: initPlugin");
   const s = window.signapse.appId;
   cs(s).then((t) => {
     I = t, re(s, t), St(t).then(() => {
-      t.activationMode === "custom" ? ds() : Pt(t);
+      ds(), Pt(t);
     }).catch((e) => {
       console.error("Error loading plugin", e);
     });
